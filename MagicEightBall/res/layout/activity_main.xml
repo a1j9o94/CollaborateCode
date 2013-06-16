@@ -8,19 +8,27 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
-
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="16dp"
-        android:layout_toRightOf="@+id/textView1"
-        android:text="Generate" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="145dp"
+        android:text="@string/generate" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:fromAlpha="1.0" 
+ 	   android:toAlpha="0.0" 
+ 	   android:duration="1000"    
+ 	   android:repeatCount="infinite" 
+ 	   android:repeatMode="reverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="84dp"
+        android:text="@string/hello_world" />
 
 </RelativeLayout>

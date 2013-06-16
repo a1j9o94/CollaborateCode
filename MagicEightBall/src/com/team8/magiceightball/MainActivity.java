@@ -37,5 +37,6 @@ public class MainActivity extends Activity implements View.OnClickListener{
 		responseField.setText("test");
 		if(v.getId() == R.id.button1)
 			responseField.setText(response.getResponse());
+		FadeIn.runAlphaAnimation(this, R.id.textView1);
 	}
 }
