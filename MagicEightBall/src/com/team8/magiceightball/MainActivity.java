@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
@@ -12,7 +12,8 @@ import android.widget.TextView;
  */
 public class MainActivity extends Activity implements View.OnClickListener {
 	TextView responseField;
-	Button generateButton;
+	TextView instructions;
+	ImageView generateImage;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +21,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
 		setContentView(R.layout.activity_main);
 
 		responseField = (TextView) findViewById(R.id.textView1);
-		generateButton = (Button) findViewById(R.id.button1);
-		generateButton.setOnClickListener(this);
+		instructions = (TextView) findViewById(R.id.textView2);
+		generateImage = (ImageView) findViewById(R.id.imageView1);
+		generateImage.setOnClickListener(this);
 	}
 
 	@Override
@@ -35,7 +37,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 	public void onClick(View v) {
 		ResponseGenerator response = new ResponseGenerator();
 		responseField.setText("test");
-		if (v.getId() == R.id.button1) {
+		if (v.getId() == R.id.imageView1) {
 			responseField.setText(response.getResponse());
 			Animate.startAnimation(this, R.id.imageView1);
 		}

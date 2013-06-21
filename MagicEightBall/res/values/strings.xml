@@ -3,7 +3,8 @@
 
     <string name="app_name">MagicEightBall</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Press generate to see your fortune!</string>
+    <string name="hello_world"></string>
     <string name="generate">Generate!</string>
+    <string name="instructions">Think of your question then press the ball to reveal your message</string>
 
 </resources>

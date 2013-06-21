@@ -35,9 +35,9 @@ public final class R {
     }
     public static final class id {
         public static final int action_settings=0x7f090003;
-        public static final int button1=0x7f090001;
-        public static final int imageView1=0x7f090002;
-        public static final int textView1=0x7f090000;
+        public static final int imageView1=0x7f090000;
+        public static final int textView1=0x7f090002;
+        public static final int textView2=0x7f090001;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -50,6 +50,7 @@ public final class R {
         public static final int app_name=0x7f060000;
         public static final int generate=0x7f060003;
         public static final int hello_world=0x7f060002;
+        public static final int instructions=0x7f060004;
     }
     public static final class style {
         /** 
