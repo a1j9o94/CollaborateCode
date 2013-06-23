@@ -5,6 +5,6 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world"></string>
     <string name="generate">Generate!</string>
-    <string name="instructions">Think of your question then press the ball to reveal your message</string>
+    <string name="instructions">Click the button, Ask a question then shake the Magic 8 Ball</string>
 
 </resources>
